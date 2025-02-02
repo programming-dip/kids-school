@@ -1,0 +1,146 @@
+
+/* Quicksand-font */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+
+/* Raleway Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-font-color:black;
+    --secondary-font-color:#808080;
+    --curriculum-card-description-font-color:#808080;
+    --curriculum-card-title-font-color:#202020;
+    --footer-fonts-color:white;
+
+}
+
+
+.raleway-secondary {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+
+  font-family: "Quicksand", serif;
+  
+  /* font-optical-sizing: auto; */
+  font-size: 16px;
+  font-weight: normal;
+  /* font-style: normal; */
+
+  
+  margin: 2% 8%;
+}
+
+
+/* Shared Class */
+.btn-primary {
+    text-align: center;
+    width: 197px;
+    height: 50px;
+    color: white;
+    font-size:  1rem;
+    font-weight: normal;
+    border: 0;
+    border-radius: 12px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--primary-font-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+/* Nav Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    max-width: 62px;
+    max-height: 62px;
+    margin-right: 4%;
+}
+nav li {
+    list-style: none;
+    margin-right: 15%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    
+    
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav .name {
+    color:var(--primary-font-color);
+    font-size: 1.5rem;
+
+}
+
+nav .contact-btn {
+    background-color: orange;
+    font-weight: 400;
+}
+
+nav .pages-link #link-1 {
+    color: orange;
+}
+
+nav .pages-link #link-2 {
+    color: skyblue;
+}
+
+nav .pages-link #link-3 {
+    color: #05D4DF;
+}
+
+nav .pages-link #link-4 {
+    color: #5D58EF;
+}
+
+
+/* Banner styles */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .banner-texts {
+    max-width: 640px;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.banner .hero-description {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--primary-font-color);
+}
+
+.banner .hero-btn {
+    background-color: black;
+}
+
+
+
