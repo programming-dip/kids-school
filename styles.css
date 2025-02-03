@@ -672,8 +672,8 @@ footer .name {
 
 
     .story-card .card-btn {
-        max-width: 103.90px;
-        max-height: 22.80px;
+        width: 103.90px;
+        height: 22.80px;
         border-radius: 28.54px;
         font-size: 0.7rem;
     }
@@ -692,8 +692,6 @@ footer .name {
        
         left: -5.5%;
         width: 100vw;
-       
-    
     
     }
    
