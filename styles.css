@@ -415,6 +415,22 @@ main {
     background-color: #5D58F0;
 }
 
+
+/* Marquee */
+
+.marquee-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+marquee {
+    max-width: 550px;
+    color: black;
+    background-color: white;
+    position: static;
+    left: 50%;
+}
+
 /* Footer */
 
 footer {
