@@ -41,13 +41,15 @@ body {
 /* Shared Class */
 .btn-primary {
     text-align: center;
-    width: 197px;
+    max-width: 197px;
+    width: 100%;
     height: 50px;
     color: white;
     font-size:  1rem;
     font-weight: normal;
     border: 0;
     border-radius: 12px;
+    cursor: pointer;
 }
 
 .section-title {
@@ -142,5 +144,253 @@ nav .pages-link #link-4 {
     background-color: black;
 }
 
+/* Main Section */
+main {
+    background-image: url(assets/bg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    margin-top: 0;
+    
+}
 
 
+/* Curriculum Section */
+
+.curriculum-section{
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.curriculum-section .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 4%;
+}
+.curriculum-section .card {
+    border-radius: 18.86;
+    max-width: 368px;
+    max-height: 477px;
+    border-radius: 19px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.curriculum-section #kinder {
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), white;
+    box-shadow: inset 0 0 0 0.94px rgba(222, 245, 255, 1);
+    border: 0.94px solid rgba(222, 245, 255, 1);
+
+}
+.curriculum-section #elementary {
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 0%, rgba(255, 255, 255, 0) 40%), white;
+    box-shadow: inset 0 0 0 0.94px rgba(255, 244, 220, 1);
+    border: 0.94px solid rgba(255, 244, 220, 1);
+
+}
+.curriculum-section #middle {
+    background: linear-gradient(to bottom, rgba(238, 225, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), white;
+    box-shadow: inset 0 0 0 0.94px rgba(238, 225, 255, 1);
+    border: 0.94px solid rgba(238, 225, 255, 1);
+
+}
+
+.curriculum-section .card-title {
+    color: var(--curriculum-card-title-font-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.curriculum-section .card-disc {
+    color: var(--curriculum-card-description-font-color);
+    font-weight: 400;
+    font-size: 1rem;  
+}
+
+.curriculum-section .read-more {
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.curriculum-section #rm-1 {
+    color: #64C8FF;
+}
+.curriculum-section #rm-2 {
+    color: #F0AA00;
+}
+.curriculum-section #rm-3 {
+    color: #8700FF;
+}
+
+.slide-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    
+    
+}
+.slide-btn {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    border: 0;
+    color: white;
+    background-color: orange;
+    margin-top: 5%;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+/* Stories Section */
+.stories-section {
+    
+    position:relative;
+}
+
+.stories-section::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: -9.5%;
+    width: 99.1vw;
+    height: 100%;
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+    z-index: -1;
+}
+
+.story-cards-container #hero-story {
+    max-width: 540px;
+    height:600px;
+    background-color: white;
+    border-radius: 16px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+
+    
+    
+}
+
+.story-card .card-disc {
+    max-width: 500px;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: "Raleway", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #666666;
+    margin-left: 3%;
+    margin-bottom:15px;
+    margin-top: 10%;
+}
+
+
+
+#hero-story .card-title {
+    max-width: 402.50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+#hero-story img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+
+}
+
+#hero-story {
+    position: relative;
+
+}
+
+#hero-story .card-btn {
+   width: 175px;
+    height: 48px;
+    border-radius: 48px;
+    border: 0;
+    background-color: #3CD8E8;
+    color: white;
+    font-family: "Raleway", serif;
+    position: absolute;
+    bottom: 40%;
+    left:7%;
+    cursor: pointer;
+
+
+}
+
+.stories-section .story-card {
+    max-width: 290.69px;
+    height:301.61px;
+    background-color: white;
+    border-radius: 16px;
+    position:relative;
+    
+}
+
+.story-card img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+
+}
+
+.story-card .card-title {
+    max-width: 198px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+.story-card .card-btn {
+     width: 174.5px;
+     height: 38.35px;
+     border-radius: 47.90px;
+     border: 0;
+     background-color: #95B226;
+     color: white;
+     font-family: "Raleway", serif;
+     position: absolute;
+     bottom: 34%;
+     left:7%;
+     cursor: pointer;
+ 
+ 
+ }
+.story-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8%;
+    margin-right: 0;
+    
+}
+
+.stories-section .section-title {
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.story-view-all-btn {
+    text-align: center;
+    
+}
+.story-view-all-btn .btn-primary {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8%;
+    
+
+}
